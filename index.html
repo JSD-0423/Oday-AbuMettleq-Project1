@@ -2,53 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fist Project</title>
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+
     <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="./stylesheets/main-layout.css"
     />
-    <link rel="stylesheet" type="text/css" href="./stylesheets/variables.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <p>Web Topics</p>
-        <div>
-          <button class="button-6" role="button">
+      <div class="container header-container">
+        <h1 class="page-title">Web Topics</h1>
+        <div class="btns-container">
+          <button class="text-btn">
             <ion-icon name="moon-outline"></ion-icon>
-            <p>Dark Mode</p>
+            <h5>Dark Mode</h5>
           </button>
-          <button class="button-6" role="button">
+          <button class="text-btn">
             <ion-icon name="heart-outline"></ion-icon>
-            <p>Favorites</p>
+            <h5>Favourites</h5>
           </button>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <div class="container">
-      <div>
-        <h2>Welcome to our website!</h2>
-        <h3>We have a new design that's fresh,modern and easy to use.</h3>
-      </div>
-    </div>
-
     <main>
-      <h1>"24" Web Topics Found</h1>
+      <div class="welcome-div">
+        <div>
+          <h2 class="welcome-title">Welcome to our website!</h2>
+          <h3 class="welcome-content">
+            We have a new design that's fresh,modern and easy to use.
+          </h3>
+        </div>
+      </div>
+
+      <div class="main-container container">
+        <div class="search-bar">
+          <div class="search horizantal-align">
+            <ion-icon name="search-outline"></ion-icon>
+            <input
+              type="text"
+              placeholder="Search the website"
+              class="input-search"
+            />
+          </div>
+
+          <div class="horizantal-align">
+            <div class="vertical-align">
+              <label for="sort">Sort by:</label>
+
+              <select class="input-search" id="sort">
+                <option value="">Default</option>
+                <option value="name">Name</option>
+                <option value="date">Date</option>
+                <option value="price">Price</option>
+              </select>
+            </div>
+
+            <div class="vertical-align">
+              <label for="filter">Filter by:</label>
+
+              <select class="input-search" id="filter">
+                <option value="">Default</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category3">Category 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <h2 class="results">"24" Web Topics Found</h2>
+
+        <div class="grid-container"></div>
+      </div>
     </main>
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
