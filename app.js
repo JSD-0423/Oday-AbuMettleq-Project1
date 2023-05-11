@@ -100,7 +100,7 @@ const articles = [
     author: "Chloe Taylor",
   },
   {
-    image: "./assets/logos/cross-browser.jpegg",
+    image: "./assets/logos/cross-browser.jpeg",
     title: "Cross-Compatibility",
     author: "David Lee",
   },
@@ -180,12 +180,15 @@ function createArticles() {
     let rating = document.createElement("div");
     rating.classList.add("rating");
 
+    for (let i = 0; i < 4; i++) {
+      let icon = document.createElement("ion-icon");
+      icon.setAttribute("name", "star");
+      icon.classList.add("rate-star");
+      rating.appendChild(icon);
+    }
     let icon = document.createElement("ion-icon");
+    icon.setAttribute("name", "star-half-outline");
     icon.classList.add("rate-star");
-    rating.appendChild(icon);
-    rating.appendChild(icon);
-    rating.appendChild(icon);
-    rating.appendChild(icon);
     rating.appendChild(icon);
     let author = document.createElement("h3");
     author.classList.add("author");
@@ -203,73 +206,4 @@ function createArticles() {
   }
 }
 
-// createArticles();
-// function createArticles() {
-//   var gridContainer = document.querySelector("grid-container");
-
-//   for (let i = 1; i <= 39; i++) {
-//     var article = createArticleElement();
-//     var image = createImageElement(articles[i].image, articles[i].title);
-//     var section = createSectionElement(articles[i].title, articles[i].author);
-
-//     article.appendChild(image);
-//     article.appendChild(section);
-
-//     gridContainer.appendChild(article);
-//   }
-// }
-
-// function createArticleElement() {
-//   var article = document.createElement("article");
-//   article.classList.add("grid-item");
-//   return article;
-// }
-
-// function createImageElement(src, alt) {
-//   var image = document.createElement("img");
-//   image.src = src;
-//   image.alt = alt;
-//   return image;
-// }
-
-// function createSectionElement(title, author) {
-//   var section = document.createElement("section");
-//   section.appendChild(createH3Element("Web Development Languages"));
-//   section.appendChild(createH2Element(title));
-//   section.appendChild(createRatingElement());
-//   section.appendChild(createAuthorElement(author));
-//   return section;
-// }
-
-// function createH3Element(text) {
-//   var h3 = document.createElement("h3");
-//   h3.textContent = text;
-//   return h3;
-// }
-
-// function createH2Element(text) {
-//   var h2 = document.createElement("h2");
-//   h2.textContent = text;
-//   return h2;
-// }
-
-// function createRatingElement() {
-//   var rating = document.createElement("div");
-//   rating.classList.add("rating");
-
-//   for (var i = 0; i < 5; i++) {
-//     var icon = document.createElement("ion-icon");
-//     icon.classList.add("rate-star");
-//     rating.appendChild(icon);
-//   }
-
-//   return rating;
-// }
-
-// function createAuthorElement(author) {
-//   var h3 = document.createElement("h3");
-//   h3.classList.add("author");
-//   h3.textContent = "Author: " + author;
-//   return h3;
-// }
 createArticles();
