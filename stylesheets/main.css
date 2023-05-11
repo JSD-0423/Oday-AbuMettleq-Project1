@@ -228,7 +228,7 @@ label {
   .horizantal-align {
     width: 100%;
     justify-content: space-between;
-    border-top: solid 2px var(--lines-color);
+    /* border-top: solid 2px var(--lines-color); */
   }
   .horizantal-align > .vertical-align {
     padding: 1rem;
