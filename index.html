@@ -11,86 +11,390 @@
     <link rel="stylesheet" href="./stylesheets/reset.css" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <div class="container header-container">
+      <nav class="container header-container">
         <h1 class="page-title">Web Topics</h1>
         <div class="btns-container">
-          <button class="text-btn">
+          <button class="text-btn dark-light">
             <ion-icon name="moon-outline"></ion-icon>
-            <h5>Dark Mode</h5>
+            <p class="text-btn-title">Dark Mode</p>
           </button>
-          <button class="text-btn">
+          <button class="text-btn favorite-btn">
             <ion-icon name="heart-outline"></ion-icon>
-            <h5>Favourites</h5>
+            <p class="text-btn-title">Favourites</p>
           </button>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main>
       <div class="welcome-div">
-        <div>
-          <h2 class="welcome-title">Welcome to our website!</h2>
-          <h3 class="welcome-content">
-            We have a new design that's fresh,modern and easy to use.
-          </h3>
+        <div class="gradiant-container">
+          <div class="triangle-left"></div>
+          <div class="triangle-right"></div>
         </div>
       </div>
 
-      <div class="main-container container">
+      <div class="container">
         <div class="search-bar">
-          <div class="search horizantal-align">
-            <ion-icon name="search-outline"></ion-icon>
-            <input
-              type="text"
-              placeholder="Search the website"
-              class="input-search"
-            />
+          <div class="search-input">
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            <input type="text" placeholder="Search the website..." />
           </div>
 
-          <div class="horizantal-align">
-            <div class="vertical-align">
-              <label for="sort">Sort by:</label>
-
-              <select class="input-search" id="sort">
-                <option value="">Default</option>
-                <option value="name">Name</option>
-                <option value="date">Date</option>
-                <option value="price">Price</option>
+          <div class="select-container">
+            <div class="select-wrapper">
+              <label for="select1" class="select-label">Sort by:</label>
+              <select id="select1">
+                <option value="option1" class="select-option">Default</option>
+                <option value="option2" class="select-option">Default</option>
+                <option value="option3" class="select-option">Default</option>
               </select>
             </div>
 
-            <div class="vertical-align">
-              <label for="filter">Filter by:</label>
-
-              <select class="input-search" id="filter">
-                <option value="">Default</option>
-                <option value="category1">Category 1</option>
-                <option value="category2">Category 2</option>
-                <option value="category3">Category 3</option>
+            <div class="select-wrapper">
+              <label for="select2" class="select-label">Filter by:</label>
+              <select id="select2">
+                <option value="option1" class="select-option">Default</option>
+                <option value="option2" class="select-option">Default</option>
+                <option value="option3" class="select-option">Default</option>
               </select>
             </div>
           </div>
         </div>
-        <h2 class="results">"24" Web Topics Found</h2>
-
-        <div class="grid-container"></div>
       </div>
+      <h2 class="results container">"24" Web Topics Found</h2>
+      <div class="grid-container container"></div>
     </main>
+
+    <div class="favorites container">
+      <h2>My Favourite Topics</h2>
+      <div class="slider">
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <footer class="container">
+      <p>Developed with</p>
+      <ion-icon name="heart"></ion-icon>
+      <p>&copy; 2023</p>
+    </footer>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="constants.js"></script>
-    <script src="app.js"></script>
+
+    <script src="js/constants.js"></script>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
