@@ -190,6 +190,7 @@ main {
   margin: 0;
   padding: 0;
   color: goldenrod;
+  z-index: -1;
 }
 .favorite-topic section {
   padding-inline: 0.5rem;
@@ -385,7 +386,7 @@ footer ion-icon {
     overflow: hidden;
   }
 }
-@media (max-width: 416px) {
+@media (max-width: 350px) {
   .sub-topics-content,
   .sub-topics-content {
     height: 33rem;
