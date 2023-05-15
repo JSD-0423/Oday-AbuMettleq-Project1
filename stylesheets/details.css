@@ -215,9 +215,6 @@ main {
   transform: translateY(0);
 }
 
-.main-container {
-  /* padding: 1.8rem 39rem 1rem 17.4rem; */
-}
 .topic-container {
   display: flex;
   flex-direction: column;
