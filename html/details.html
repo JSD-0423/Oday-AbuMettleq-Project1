@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="../stylesheets/details.css" />
+    <link rel="stylesheet" href="../stylesheets/reset.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
@@ -20,11 +20,11 @@
       <nav class="container header-container">
         <h1 class="page-title">Web Topics</h1>
         <div class="btns-container">
-          <button class="text-btn">
+          <button class="text-btn dark-light">
             <ion-icon name="moon-outline"></ion-icon>
             <p class="text-btn-title">Dark Mode</p>
           </button>
-          <button class="text-btn">
+          <button class="text-btn favorite-btn">
             <ion-icon name="heart-outline"></ion-icon>
             <p class="text-btn-title">Favourites</p>
           </button>
@@ -34,7 +34,120 @@
 
     <main>
 
+      <div class="welcome-div">
+        <div class="gradiant-container">
+          <div class="triangle-left"></div>
+          <div class="triangle-right"></div>
+        </div>
+
+        <div class="welcome-content">
+          <h2 class="welcome-title">Welcome to our website!</h2>
+          <h3 class="welcome-sub-title">
+            We have a new design that's fresh,modern and easy to use.
+          </h3>
+        </div>
+      </div>
+
+      <div class="topic-container">
+
+        <div class="topic-details main-container">
+
+          <div class="details-main">
+
+            <h3 class="category">Web Development Languages</h3>
+            <h2 class="title">HTML</h2>
+            <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+              sit ipsam sint inventore exercitationem ex rem deserunt, odit sed
+              quis, officiis veniam? Explicabo quaerat sunt voluptates eaque
+              distinctio! Error, dolore! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Beatae adipisci similique at provident nemo
+              porro distinctio et velit, consectetur vitae. Architecto sunt
+              accusamus ab maxime doloribus dicta similique
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sub-topics main-container">
+          
+          <aside class="side-bar">
+            <img src="../assets/logos/javascript.jpg" alt="HTML" />
+            <section class="side-bar-content">
+              <h3><strong>HTML</strong> by <a href="#">Sarah Smith</a></h3>
+              <div class="add-to-fav">
+                <h3>Interested in this topic?</h3>
+                <button class="text-btn add-to-favorites">
+                  <p class="text-btn-title">Add to Favorites</p>
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <h4>Unlimited Credits</h4>
+              </div>
+            </section>
+          </aside>
+          <div class="sub-topics-content">
+            <h2>HTML Sub Topics</h2>
+            <div>
+              <ion-icon name="checkmark-circle-outline" class="check-mark">
+              </ion-icon>
+              <h3>HTML syntax and structure</h3>
+            </div>
+            <div>
+              <ion-icon name="checkmark-circle-outline" class="check-mark">
+              </ion-icon>
+              <h3>HTML syntax and structure</h3>
+            </div>
+            <div>
+              <ion-icon name="checkmark-circle-outline" class="check-mark">
+              </ion-icon>
+              <h3>HTML syntax and structure</h3>
+            </div>
+            <div>
+              <ion-icon name="checkmark-circle-outline" class="check-mark">
+              </ion-icon>
+              <h3>HTML syntax and structure</h3>
+            </div>
+            <div>
+              <ion-icon name="checkmark-circle-outline" class="check-mark">
+              </ion-icon>
+              <h3>HTML syntax and structure</h3>
+            </div>
+            <div>
+              <ion-icon name="checkmark-circle-outline" class="check-mark">
+              </ion-icon>
+              <h3>HTML syntax and structure</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <div class="favorites container">
+      <h2>My Favourite Topics</h2>
+      <div class="slider">
+        <article class="favorite-topic">
+          <img src="../assets/logos/react.webp" />
+          <section>
+            <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
     <footer class="container">
       <p>Developed with</p>
       <ion-icon name="heart"></ion-icon>
@@ -48,7 +161,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="js/constants.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/constants.js"></script>
   </body>
 </html>

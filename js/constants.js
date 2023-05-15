@@ -220,13 +220,13 @@ const articles = [
   {
     image: "assets/logos/wai.jpeg",
     category: "Web Development Concepts and Technologies",
-    title: "Web Accessibility Initiaive",
+    title: "Web Accessibility Initiaive (WAI)",
     author: "Avery Perez",
   },
   {
     image: "assets/logos/cms.png",
     category: "Web Development Concepts and Technologies",
-    title: "Content Mangment Systems",
+    title: "Content Mangment Systems (CMS)",
     author: "Victoria Kim",
   },
   {
