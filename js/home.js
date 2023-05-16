@@ -36,9 +36,11 @@ createArticles();
 
 const popupButton = document.querySelector(".favorite-btn");
 const popupContainer = document.querySelector(".favorites");
+
 popupButton.addEventListener("click", function () {
   popupContainer.classList.toggle("active");
 });
+
 const themeToggle = document.querySelector(".theme-toggle");
 
 function switchTheme() {
@@ -50,4 +52,14 @@ function switchTheme() {
     document.documentElement.setAttribute("data-theme", "dark");
   }
 }
-themeToggle.addEventListener("click", switchTheme, false);
+
+themeToggle.addEventListener("click", switchTheme);
+
+const gridItems = document.querySelectorAll(".grid-item");
+gridItems.forEach((e) => {
+  e.addEventListener("click", navigateToPage);
+});
+
+function navigateToPage() {
+  window.location.href = "./html/details.html";
+}

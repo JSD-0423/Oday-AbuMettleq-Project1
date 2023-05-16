@@ -1,6 +1,3 @@
-
-
-
 .topic-container {
   display: flex;
   flex-direction: column;
@@ -10,10 +7,10 @@
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
-  background-color: var(--body-text);
+  background-color: #333333;
   width: 100%;
   height: 17.5rem;
-  color: var(--bg-default);
+  color: #ededed;
 }
 .details-main {
   width: 54rem;
@@ -24,6 +21,7 @@
   font-weight: 400;
 }
 .title {
+  color: #ededed;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -44,9 +42,9 @@
   margin-top: -33rem;
   width: 20rem;
   height: 25rem;
-  background-color: var(--bg-default);
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.06) 0 4px 5px;
-  border: solid 2px var(--bg-default);
+  border: solid 2px #ffffff;
 }
 .side-bar img {
   margin: 0;
@@ -57,7 +55,7 @@
 .side-bar-content {
   height: 100%;
   padding: 1rem;
-  color: var(--body-text);
+  color: #333333;
 }
 .side-bar-content h3 {
   font-size: 1rem;
@@ -70,7 +68,7 @@
   margin-top: 0.5rem;
   justify-content: space-between;
   height: 38%;
-  border: solid 1px var(--lines-color);
+  border: solid 1px #dddddd;
 }
 .add-to-fav h3 {
   font-size: 1.1rem;
@@ -79,12 +77,28 @@
 .add-to-fav h4 {
   text-align: center;
   opacity: 0.7;
-  color: var(--body-text);
+  color: #333333;
   font-size: 0.8rem;
   font-weight: 400;
 }
 .add-to-favorites {
-  color: var(--bg-default);
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0.7rem;
+  background: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+
+  color: #ffffff;
   font-size: 1.4rem;
   font-weight: 400;
   background-color: var(--brand-secondary);
@@ -111,6 +125,7 @@
   border: solid 1px var(--lines-color);
 }
 .sub-topics-content h2 {
+  color: var(--body-text);
   padding-inline: 1.8rem;
   padding-block: 1rem;
   font-size: 1.5rem;
@@ -139,7 +154,6 @@
   font-size: 1rem;
   font-weight: 700;
 }
-
 
 @media (max-width: 350px) {
   .sub-topics-content,

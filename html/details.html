@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home Page</title>
+    <title>Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -79,8 +79,8 @@
               <h3><strong>HTML</strong> by <a href="#">Sarah Smith</a></h3>
               <div class="add-to-fav">
                 <h3>Interested in this topic?</h3>
-                <button class="text-btn add-to-favorites">
-                  <p class="text-btn-title">Add to Favorites</p>
+                <button class="add-to-favorites">
+                  <p>Add to Favorites</p>
                   <ion-icon name="heart-outline"></ion-icon>
                 </button>
                 <h4>Unlimited Credits</h4>
@@ -123,14 +123,26 @@
         </div>
       </div>
     </main>
-
     <div class="favorites container">
       <h2>My Favourite Topics</h2>
       <div class="slider">
         <article class="favorite-topic">
-          <img src="../assets/logos/react.webp" />
+          <img src="./assets/logos/react.webp" />
           <section>
             <h2>Topic</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/cloud.jpeg" />
+          <section>
+            <h2>Cloud Computing CC</h2>
             <div>
               <ion-icon name="star"></ion-icon>
               <ion-icon name="star"></ion-icon>
@@ -156,7 +168,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/details.js"></script>
     <script src="../js/constants.js"></script>
   </body>
 </html>
