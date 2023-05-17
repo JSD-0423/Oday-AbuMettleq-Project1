@@ -19,7 +19,6 @@ h6 {
 
 .container {
   padding-inline: 3.6rem;
-  transition: 200ms;
 }
 
 header {
@@ -174,6 +173,7 @@ main {
 
 .favorite-topic img {
   margin: 0;
+  background-color: white;
   width: 100%;
   object-fit: cover;
   height: 55%;
@@ -236,15 +236,18 @@ footer ion-icon {
   color: var(--heart-color);
 }
 
-@media (max-width: 625px) {
+/* mobile view */
+/* @media (max-width: 625px) {
   .text-btn-title {
     display: none;
   }
   .container {
     padding-inline: 1.5rem;
-  }
 }
-@media (max-width: 458px) {
+} */
+
+
+@media (max-width: 625px) {
   .welcome-content {
     top: 6.9rem;
   }
@@ -259,5 +262,11 @@ footer ion-icon {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .text-btn-title {
+    display: none;
+  }
+  .container {
+    padding-inline: 1.5rem;
   }
 }

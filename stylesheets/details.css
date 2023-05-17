@@ -47,6 +47,7 @@
   border: solid 2px #ffffff;
 }
 .side-bar img {
+  background-color: white;
   margin: 0;
   width: 100%;
   object-fit: cover;

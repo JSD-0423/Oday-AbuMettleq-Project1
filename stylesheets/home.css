@@ -24,6 +24,7 @@
 .search-input input {
   background-color: transparent;
   outline-color: var(--brand-primary);
+  padding-block: 1rem;
   padding-left: 1.8rem;
   height: 100%;
   border-top-left-radius: 0.65rem;
@@ -76,7 +77,7 @@
 .grid-container {
   width: inherit;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14.96rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14.96rem, 1fr));
   justify-content: left;
   grid-gap: 2rem;
   margin-block: 2rem;
@@ -94,6 +95,7 @@
 }
 
 .grid-item img {
+  background-color: white;
   margin: 0;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -149,8 +151,18 @@
   font-weight: 400;
   opacity: 0.8;
 }
+@media (max-width: 407px) {
+  .select-wrapper {
+    border-left: 0;
+    border-top: solid 1px var(--lines-color);
+  }
+  .select-container > div:first-child {
+    border-right: solid 1px var(--lines-color);
+  }
+}
 
-@media (max-width: 458px) {
+/* mobile view */
+@media (max-width: 625px) {
   .search-bar {
     flex-wrap: wrap;
     width: 100%;
@@ -160,15 +172,8 @@
   }
   .select-wrapper {
     width: 100%;
-    border-left: 0;
-    border-top: solid 1px var(--lines-color);
   }
-  .select-container > div:first-child {
-    border-right: solid 1px var(--lines-color);
-  }
-  .search-input {
-    padding-block: 1rem;
-  }
+
   .triangle-right {
     position: relative;
     top: -11rem;
@@ -193,8 +198,5 @@
       rgba(7, 104, 160, 1) 0%,
       rgba(3, 193, 128, 1) 46%
     );
-  }
-  .welcome-content {
-    top: 6.6rem;
   }
 }
