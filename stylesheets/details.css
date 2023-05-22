@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+
 .topic-details {
+  padding-right: 22rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +16,9 @@
   color: #ededed;
 }
 .details-main {
-  width: 54rem;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
 }
 .category {
   color: var(--brand-secondary);
@@ -36,6 +41,7 @@
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .side-bar {
@@ -61,6 +67,9 @@
 .side-bar-content h3 {
   font-size: 1rem;
   font-weight: 400;
+}
+.side-bar-content > h3 > a {
+  color: var(--brand-primary);
 }
 .add-to-fav {
   display: flex;
@@ -98,7 +107,6 @@
   gap: 0.35rem;
   font-size: 0.9rem;
   font-weight: 400;
-
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 400;
@@ -119,19 +127,32 @@
   gap: 2rem;
 }
 .sub-topics-content {
+  width: 32rem;
   background-color: var(--bg-default);
-
-  height: 25rem;
   border-radius: 0.3rem;
   border: solid 1px var(--lines-color);
 }
 .sub-topics-content h2 {
-  color: var(--body-text);
+  width: 100%;
   padding-inline: 1.8rem;
+  color: var(--body-text);
   padding-block: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   border-bottom: solid 1px var(--lines-color);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.sub-topics-content h3 {
+  width: 100%;
+  color: var(--body-text);
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .check-mark {
   font-size: 1.5rem;
@@ -139,6 +160,8 @@
 }
 .sub-topics-content > div {
   padding-inline: 1.8rem;
+
+  width: 100%;
   padding-block: 0.95rem;
   display: flex;
   justify-content: start;
@@ -147,20 +170,6 @@
 }
 .sub-topics-content > div:last-child {
   border: none;
-}
-
-.sub-topics-content h3 {
-  color: var(--body-text);
-  padding-left: 1rem;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-@media (max-width: 350px) {
-  .sub-topics-content,
-  .sub-topics-content {
-    height: 33rem;
-  }
 }
 
 @media (max-width: 625px) {
@@ -175,9 +184,7 @@
   .sub-topics-content {
     width: 100%;
   }
-  .description {
-    max-width: none;
-  }
+
   .side-bar {
     width: 100%;
     margin: 0;
@@ -185,8 +192,8 @@
 }
 
 @media (max-width: 978px) and (min-width: 626px) {
-  .description {
-    max-width: none;
+  .details-main {
+    max-width:100% ;
   }
   .side-bar {
     width: 100%;
@@ -202,12 +209,5 @@
   }
   .sub-topics-content {
     width: 100%;
-  }
-}
-
-@media (min-width: 978px) {
-  .description,
-  .sub-topics-content {
-    width: 32rem;
   }
 }

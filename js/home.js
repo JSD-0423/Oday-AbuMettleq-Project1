@@ -12,7 +12,6 @@ function createArticles() {
     }
 
     ratingStars += `<ion-icon name="star-half-outline" class="rate-star"></ion-icon>`;
-
     html += `<article class="grid-item">
     <img src="${articles[i].image}" alt="${articles[i].title}">
     

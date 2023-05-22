@@ -100,7 +100,7 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   height: 8.5rem;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .grid-item section {
