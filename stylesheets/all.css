@@ -57,9 +57,11 @@ header {
 .page-title {
   font-size: 1rem;
   color: var(--brand-primary);
-  font-weight: 700;
+  font-weight: 400;
 }
-
+.page-title:hover {
+  cursor: pointer;
+}
 .welcome-div {
   text-align: left;
   width: 100%;
@@ -245,7 +247,6 @@ footer ion-icon {
     padding-inline: 1.5rem;
 }
 } */
-
 
 @media (max-width: 625px) {
   .welcome-content {

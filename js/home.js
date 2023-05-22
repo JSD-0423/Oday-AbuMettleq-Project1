@@ -62,3 +62,9 @@ gridItems.forEach((e) => {
 function navigateToPage() {
   window.location.href = "./html/details.html";
 }
+
+var heading = document.querySelector(".page-title");
+
+heading.addEventListener("click", function () {
+  window.location.href = "index.html";
+});
