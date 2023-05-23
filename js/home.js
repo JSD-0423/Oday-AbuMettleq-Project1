@@ -12,7 +12,7 @@ function createArticles() {
     }
 
     ratingStars += `<ion-icon name="star-half-outline" class="rate-star"></ion-icon>`;
-    html += `<article class="grid-item">
+    html += `<article class="grid-item"  role="gridItem" aria-label="Click this item to navigate to full details" >
     <img src="${articles[i].image}" alt="${articles[i].title}">
     
       <section>
@@ -67,4 +67,26 @@ var heading = document.querySelector(".page-title");
 
 heading.addEventListener("click", function () {
   window.location.href = "index.html";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToBottom = document.getElementById("scrollToBottom");
+
+  // Show the button when scrolling down
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      scrollToBottom.classList.add("show");
+    } else {
+      scrollToBottom.classList.remove("show");
+    }
+  });
+
+  // Scroll to the bottom of the page
+  scrollToBottom.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  });
 });

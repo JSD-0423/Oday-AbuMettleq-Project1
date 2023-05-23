@@ -18,17 +18,33 @@
   </head>
   <body>
     <header>
-      <nav class="container header-container">
-        <h1 class="page-title">Web Topics</h1>
+
+      <nav class="container header-container" role="heading">
+
+        <h1 class="page-title" aria-label="Page title navigates to home screen">
+          Web Topics
+        </h1>
+
         <div class="btns-container">
-          <button class="text-btn theme-toggle">
+
+          <button
+            class="text-btn theme-toggle"
+            role="button"
+            aria-label="Changes the page's theme"
+          >
             <ion-icon name="moon-outline"></ion-icon>
             <p class="text-btn-title">Dark Mode</p>
           </button>
-          <button class="text-btn favorite-btn">
+
+          <button
+            class="text-btn favorite-btn"
+            role="button"
+            aria-label="Toggles the favorites section"
+          >
             <ion-icon name="heart-outline"></ion-icon>
             <p class="text-btn-title">Favourites</p>
           </button>
+          
         </div>
       </nav>
     </header>

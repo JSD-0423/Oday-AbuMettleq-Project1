@@ -105,11 +105,6 @@ header {
     rgba(3, 193, 128, 1) 100%
   );
 }
-.welcome-title {
-  color: var(--brand-secondary);
-  font-weight: 700;
-  font-size: 1.4rem;
-}
 
 .welcome-content {
   position: absolute;
@@ -117,6 +112,16 @@ header {
   top: 7.4rem;
   padding-inline: 1rem;
 }
+
+.welcome-title {
+  color: var(--brand-secondary);
+  font-weight: 700;
+  font-size: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .welcome-sub-title {
   color: var(--body-text);
   font-weight: 400;
@@ -164,7 +169,6 @@ main {
 .favorite-topic {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-radius: 0.5rem;
   box-shadow: rgba(23, 23, 23, 0.1) 0px 0px 5px 1px;
   background-color: var(--bg-default);
@@ -198,7 +202,8 @@ main {
   z-index: -1;
 }
 .favorite-topic section {
-  padding-inline: 0.5rem;
+  margin-top: .3rem;
+  padding-inline: 0.3rem;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -237,16 +242,6 @@ footer ion-icon {
   font-size: 1.5rem;
   color: var(--heart-color);
 }
-
-/* mobile view */
-/* @media (max-width: 625px) {
-  .text-btn-title {
-    display: none;
-  }
-  .container {
-    padding-inline: 1.5rem;
-}
-} */
 
 @media (max-width: 625px) {
   .welcome-content {

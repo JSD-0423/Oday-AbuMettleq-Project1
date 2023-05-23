@@ -12,20 +12,22 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  padding-left: 1rem;
   flex-grow: 2;
 }
 
 .search-input ion-icon {
+  padding-left: 1rem;
   color: var(--body-text);
-  margin-right: -1.5rem;
+  margin-right: -2rem;
 }
 
 .search-input input {
+  font-size: 1rem;
+  font-weight: 400;
   background-color: transparent;
   outline-color: var(--brand-primary);
   padding-block: 1rem;
-  padding-left: 1.8rem;
+  padding-left: 2.5rem;
   height: 100%;
   border-top-left-radius: 0.65rem;
   border-bottom-left-radius: 0.65rem;
@@ -122,6 +124,7 @@
 }
 
 .grid-item div h3 {
+  width: 100%;
   color: var(--body-text);
   font-size: 0.85rem;
   font-weight: 400;
@@ -150,17 +153,21 @@
 }
 
 .grid-item .author {
+  width: 100%;
   color: var(--body-text);
   font-size: 0.8rem;
   font-weight: 400;
   opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-@media (max-width: 407px) {
-}
 
-/* mobile view */
 @media (max-width: 625px) {
+  .search-input input {
+    border-bottom-left-radius: 0;
+  }
   .select-wrapper {
     border-left: 0;
     border-top: solid 1px var(--lines-color);
