@@ -28,9 +28,7 @@ header {
 .text-btn {
   color: var(--body-text);
   height: 2rem;
-  display: flex;
   justify-content: center;
-  align-items: center;
   padding-inline: 0.7rem;
   background: none;
   background-color: var(--bg-default);
@@ -235,7 +233,7 @@ footer {
   gap: 0.4rem;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
+
 }
 
 footer ion-icon {

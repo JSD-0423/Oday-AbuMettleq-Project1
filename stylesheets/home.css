@@ -132,7 +132,6 @@ a {
   color: var(--body-text);
   font-size: 0.85rem;
   font-weight: 400;
-  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -172,6 +171,7 @@ a {
     border-bottom-left-radius: 0;
   }
   .select-wrapper {
+    width: 100%;
     border-left: 0;
     border-top: solid 1px var(--lines-color);
   }
@@ -186,10 +186,6 @@ a {
 
   .select-container {
     flex-grow: 1;
-  }
-
-  .select-wrapper {
-    width: 100%;
   }
 
   .triangle-right {
