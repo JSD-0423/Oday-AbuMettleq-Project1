@@ -149,6 +149,7 @@ main {
   justify-content: space-evenly;
 }
 .favorites > h2 {
+  margin-top: .8rem;
   color: var(--body-text);
   font-size: 1rem;
   font-weight: 700;
@@ -202,8 +203,8 @@ main {
   z-index: -1;
 }
 .favorite-topic section {
-  margin-top: .3rem;
-  padding-inline: 0.3rem;
+  margin-top: 0.3rem;
+  padding-inline: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: left;

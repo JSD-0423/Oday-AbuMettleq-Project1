@@ -28,6 +28,9 @@
 .rating {
   color: var(--star-color);
 }
+a{
+  text-decoration: none;
+}
 .description {
   height: 100%;
   font-size: 1rem;
