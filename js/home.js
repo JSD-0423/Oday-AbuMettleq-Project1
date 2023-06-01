@@ -12,7 +12,7 @@ function createArticles() {
     }
 
     ratingStars += `<ion-icon name="star-half-outline" class="rate-star"></ion-icon>`;
-    html += `<a href="./html/details.html"><article class="grid-item"  role="gridItem" aria-label="Click this item to navigate to full details" >
+    html += `<a class="anchors" href="./html/details.html"><article class="grid-item"  role="gridItem" aria-label="Click this item to navigate to full details" >
     <img src="${element.image}" alt="${element.title}">
     
       <section>

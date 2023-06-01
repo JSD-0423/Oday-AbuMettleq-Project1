@@ -18,7 +18,7 @@
 .search-input ion-icon {
   padding-left: 0.7rem;
   color: var(--body-text);
-  margin-right: -2rem;
+  margin-right: -1.55rem;
 }
 
 .search-input input {
@@ -169,6 +169,7 @@ a {
 @media (max-width: 625px) {
   .search-input input {
     border-bottom-left-radius: 0;
+    padding-block: 1rem;
   }
   .select-wrapper {
     width: 100%;
